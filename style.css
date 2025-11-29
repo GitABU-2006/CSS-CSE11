@@ -1,4 +1,4 @@
-/* h2{
+/* /* h2{
     color:blue;
 }
 
@@ -45,7 +45,7 @@ div{
 }
   */
 
-  .container {
+  /* .container {
                 width: 520px;
                 height: 310px;
                 border: 2px solid black;
@@ -77,4 +77,34 @@ div{
     margin:10px;
     text-align:center;
 }
+ */
 
+ .container{
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    background-color: aqua;
+    border: 2px solid black;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+    gap:10px ;
+    
+ }
+ .item{
+    height: 100px;
+    width: 200px;
+    background: chocolate;
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    flex-grow:1 ;
+
+ }
+
+ .item2{
+    order: -1;
+    flex-grow: 2;
+    align-self:flex-end;
+ }
